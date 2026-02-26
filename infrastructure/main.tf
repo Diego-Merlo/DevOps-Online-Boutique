@@ -81,6 +81,6 @@ resource "kubernetes_service" "recommendation" {
       port        = 80
       target_port = 8080
     }
-    type = "LoadBalancer"
+    type = "NodePort"
   }
 }
