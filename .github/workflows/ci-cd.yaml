@@ -30,7 +30,7 @@ jobs:
             --junitxml=test-results/unit-tests.xml
 
       - name: Publicar reporte
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: reporte-pruebas-unitarias
