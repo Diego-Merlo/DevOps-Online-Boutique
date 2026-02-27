@@ -75,11 +75,11 @@ def index():
     </head>
     <body>
         <header>
-            <h1>🛍️ ONLINE BOUTIQUE</h1>
+            <h1>ONLINE BOUTIQUE</h1>
             <p>Recommendation Service — Running on Minikube + Terraform</p>
         </header>
         <div class="container">
-            <h2>📦 Catálogo de productos</h2>
+            <h2>Catálogo de productos</h2>
             <div class="grid">
                 {% for p in products %}
                 <div class="card" onclick="window.location='/recommend/{{ p.id }}'">
@@ -125,7 +125,7 @@ def recommend(product_id):
         </style>
     </head>
     <body>
-        <header><h1>🛍️ ONLINE BOUTIQUE</h1></header>
+        <header><h1>ONLINE BOUTIQUE</h1></header>
         <div class="container">
             <a href="/">← Volver al catálogo</a>
             {% if current %}
@@ -135,7 +135,7 @@ def recommend(product_id):
                 <p>${{ current.price }} · {{ current.category }}</p>
             </div>
             {% endif %}
-            <h2>✨ También te puede interesar ({{ recs|length }} recomendaciones)</h2>
+            <h2>También te puede interesar ({{ recs|length }} recomendaciones)</h2>
             <div class="grid">
                 {% for p in recs %}
                 <div class="card">
